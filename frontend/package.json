@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "deno task dev:vite",
+    "build:dev": "deno run -A npm:vite build --minify false --mode development",
+    "build": "deno run -A npm:vite build --mode production",
+    "preview": "deno run -A npm:vite preview",
+    "dev:vite": "deno run -A npm:vite"
+  },
+  "dependencies": {
+    "@wailsio/runtime": "latest"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
